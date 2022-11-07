@@ -8,13 +8,11 @@ const Movies = require("../models/movie");
 
 const db = process.env.DB_URL;
 
-console.log(db);
 
 mongoose.connect(db, (err) => {
   if (err) {
     console.log("Error", err);
   } else {
-    console.log("Connected to mongodb");
   }
 });
 
